@@ -1,0 +1,268 @@
+.head_fon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-position: center;
+  box-sizing: content-box;
+  height: 120px;
+  background-color: rgb(3, 3, 3);
+  background-repeat: no-repeat;
+  background-image: url("main_img/header_fon8.png");
+  background-size: contain;
+  border-color: #dd1919;
+  border-width: 0px;
+  border-style: none;
+}
+
+body {
+  background-color: #363636;
+}
+
+.footer{
+  background-color: #363636;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  width: 99%;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fafaff;
+}
+
+.footer a{
+  background-color: #363636;
+  position: fixed;
+  right: 0;
+  text-decoration: none;
+  bottom: 20px;
+  text-align: center;
+  width: 99%;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fafaff;
+}
+
+.head_slogan {
+  flex: 0 1 auto;
+  color: #ddd7d7;
+  margin-left: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.head_tel {
+  flex-grow: 1;
+  align-self: flex-end;
+  flex: 0 1 auto;
+  color: #ddd7d7;
+  font-size: small;
+  margin-right: 0.5em;
+  margin-left: auto;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-repeat: no-repeat;
+}
+
+.head_tel_space {
+  flex: 30 1 auto;
+  align-self: flex-end;
+}
+
+.admin_add {
+  flex: 0 1 auto;
+  justify-content: space-between;
+  background-position: right;
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: 1.4em;
+  margin-top: 20px;
+  background-color: rgb(2, 2, 2);
+  background-repeat: no-repeat;
+}
+
+.my-flex-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+  background-color: #c7c3c3;
+  border-color: #f3f2f2;
+  border-width: 1px;
+  border-style: none;
+  box-shadow: 1px 2px 4px 1px rgba(97, 96, 96, 0.5);
+  box-sizing: content-box;
+  margin: 5px;
+  border-radius: 5px;
+  height: 50px;
+  position:relative;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+.my-flex-cont:hover {
+  background-color: #e2dfdf;
+  border-color: #bbbbbb;
+  border-width: 1px;
+  border-style: ridge;
+  box-shadow: 2px 3px 5px 2px rgba(97, 96, 96, 0.5);
+}
+
+.my-flex-box {
+  margin: 5px;
+  padding: 5px;
+  flex: 0 1 auto;
+}
+
+.my-flex-box-price {
+  margin: 5px;
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+input {
+  padding: 10px 10px 10px 10px;
+  border-width: 1px;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.serfind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search {
+  display: block;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 50vw;
+}
+
+.selectordata {
+  display: block;
+  padding: 10px 10px 10px 10px;
+  border-width: 1px;
+  border-radius: 7px;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.submit {
+  width: 40px;
+  border-width: 0px;
+  color: #ffffff;
+  background-image: url(main_img/search_img30.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #d4d1d1;
+}
+
+@media all and (max-width: 550px) {
+  .selectordata {
+    display: none;
+  }
+  .serfind {
+    display: block;}
+  .search {
+    width: calc(100% - 10px);
+    }
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 16px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 16px;
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close {
+  color: rgba(97, 96, 96, 0.5);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-text {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+.modal-price {
+  text-align: right;
+  padding: 16px;
+}
+
+.back-to-top {
+  position:fixed;
+  height: 43px;
+  width: 43px;
+  bottom: 120px;
+  right: 35px;
+  display:block;
+  background: #c7c3c3;
+  padding: 0px 0px;
+  border-radius: 36px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all .2s ease-in-out;
+  opacity: 0;
+}
+ 
+.back-to-top:hover {
+  background:#f8f7f7;
+}
+
+@media (pointer: coarse) {
+  .back-to-top:hover {
+    background:#c7c3c3;
+  }
+}

@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+.form {
+  max-width: 240px;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  background-color: #1cbc11;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #14a20a;
+}
+
+.head_fon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-position: center;
+  box-sizing: content-box;
+  height: 100px;
+  background-color: rgb(3, 3, 3);
+  background-repeat: no-repeat;
+  background-image: url("main_img/header_fon.png");
+  border-color: #dd1919;
+  border-width: 0px;
+  border-style: dotted;
+}
+
+.menu_add {
+  flex: 0 1 auto;
+  justify-content: space-between;
+  background-position: right;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+}
